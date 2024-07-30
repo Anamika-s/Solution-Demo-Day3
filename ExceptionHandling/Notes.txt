@@ -1,0 +1,79 @@
+﻿Error
+Anything because of which program is not working as per 
+requirement
+
+1. Syntax Error / compile time error > occurs when we do not follow
+syntax / grammar of the language
+ missing ;
+ missing {}
+ These are easy to find out
+    CAN WE CORRECT THEM ? YES
+2. Logical Error / Run Time Error > We always get result but that is not correct
+  n1-n2  
+  these are difficult to find out/ use debug feature
+  CAN WE CORRECT THEM ? YES
+3. Exception / Run Time Error > which might or might not occur
+it depends what user enters at run time
+
+ Enter age : 34 years
+ CAN WE CORRECT THEM ? NO
+
+  We have to handle them
+
+  Exception Handling
+  try
+  catch
+  finally
+
+  try > it contains statements that can cause excaption
+  catch > when some exception comes in catch block
+  finally > optional , it will be invoked in both cases
+
+   try > finally ---- if there is no exception
+   try > catch > finally ---- if there is exception
+
+    finally block shud be used for cleanup activities
+
+Add User Defined Exception
+  Create a class , inherit it from Execption class
+     Add a property Message
+     Add a constructor
+      internal class CustomException : Exception
+    {
+        public string Message { get; set; }
+        public CustomException(string message)
+           {
+            Message = message;
+           }
+         
+    }
+
+     We have throw these exceptions using throw keyword
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
